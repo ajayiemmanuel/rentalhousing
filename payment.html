@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en"  >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Chaincity,  A Modern Chaincity Real State Investmet Platform">
+<meta name="keywords" content="Real state investment,  Chaincity, Chaincity investment, Chaincity website, invest, investment, Investment Management system, investment script, Bug Finder, bug-finder, bugfinder.net, bugfinder">
+<link rel="shortcut icon" href="https://script.bugfinder.net/chaincity/assets/uploads/logo/favicon.png" type="image/x-icon">
+
+<link rel="apple-touch-icon" href="https://script.bugfinder.net/chaincity/assets/uploads/logo/logo.png">
+<title>Payment</title>
+<link rel="icon" type="image/png" sizes="16x16" href="https://script.bugfinder.net/chaincity/assets/uploads/logo/favicon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="ChainCity |     Add Fund">
+
+<meta itemprop="name" content="ChainCity |     Add Fund">
+<meta itemprop="description" content="Chaincity,  A Modern Chaincity Real State Investmet Platform">
+<meta itemprop="image" content="https://script.bugfinder.net/chaincity/assets/uploads/logo/meta.png600x315">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chaincity,  A Chaincity Real State Investmet Platform">
+<meta property="og:description" content="Chaincity,  A Chaincity Real State Investmet Platform">
+<meta property="og:image" content="https://script.bugfinder.net/chaincity/assets/uploads/logo/meta.png"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:url" content="https://script.bugfinder.net/chaincity/user/add-fund">
+
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+    <link rel="stylesheet" href="css/loading.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/dash.css">
+    <script src="js/fontawesomepro.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+
+</head>
+<body >
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+
+<div class="wrapper">
+<!-- add fund -->
+<section class="payment-gateway mt-4">
+    <div class="container-fluid">
+       <div class="row ms-2 mt-4 mb-2">
+           <div class="col">
+               <div class="header-text-full">
+                   <h3 class="dashboard_breadcurmb_heading mb-1">Payment</h3>
+                   <nav aria-label="breadcrumb">
+                       <ol class="breadcrumb">
+
+                           <li class="breadcrumb-item active" aria-current="page">Select Payment Method</li>
+                       </ol>
+                   </nav>
+               </div>
+           </div>
+       </div>
+
+       <div class="row mt-4 ms-2 me-2">
+                            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/bitcoin.png"
+                            alt="Blockchain"
+                        >
+                        <h1 style="text-align: center;">Bitcoin</h1>
+                        <button type="button"
+                            data-id="23"
+                            data-name="Blockchain"
+                            data-currency="BTC"
+                            data-gateway="blockchain"
+                            data-min_amount="Payment must be made and transaction slip must be uploaded."
+                            data-max_amount=""
+                            data-percent_charge="0"
+                            data-fix_charge=""
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal">Pay Now </button>
+                    </div>
+                </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/bank.png"
+                            alt="Bank Transfer"
+                        >
+                        <h1 style="text-align: center;">Bank Transfer</h1>
+                        <button type="button"
+                            data-id="1000"
+                            data-name="Bank Transfer"
+                            data-currency="BDT"
+                            data-gateway="bank-transfer"
+                            data-min_amount="Payment must be made and transaction slip must be uploaded."
+                            data-max_amount=""
+                            data-percent_charge="0"
+                            data-fix_charge=""
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal1">Pay Now                        </button>
+                    </div>
+                </div>
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/apple.png"
+                            alt="Block.io"
+                        >
+                        <h1 style="text-align: center;">Apple Pay</h1>
+                        <button type="button"
+                            data-id="21"
+                            data-name="ApplePay"
+                            data-currency="applepay"
+                            data-gateway="ApplePay"
+                            data-min_amount="Payment must be made and transaction slip must be uploaded."
+                            data-max_amount=""
+                            data-percent_charge="0"
+                            data-fix_charge=""
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal2">Pay Now                        </button>
+                    </div>
+                </div>
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/paypal.png"
+                            alt="Paypal"
+                        >
+                        <h1 style="text-align: center;">Paypal</h1>
+                        <a href="https://paypal.me/apostleje1">
+                        <button type="button"
+
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal">Pay Now                        </button>
+                        </a>
+                    </div>
+                </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/zelle.png"
+                            alt="zelle"
+                        >
+                        <h1 style="text-align: center;">Zelle</h1>
+                        <button type="button"
+                            data-id="13"
+                            data-name="Zelle"
+                            data-currency="USD"
+                            data-gateway="Zelle"
+                            data-min_amount="Payment must be made and transaction slip must be uploaded."
+                            data-max_amount=""
+                            data-percent_charge="0"
+                            data-fix_charge=""
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal3">Pay Now                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="gateway-box">
+                        <img
+                            class="img-fluid gateway"
+                            src="images/cashapp.png"
+                            alt="cashapp"
+                        >
+                        <h1 style="text-align: center;">Cashapp</h1>
+                        <button type="button"
+                            data-id="13"
+                            data-name="Cashapp"
+                            data-currency="USD"
+                            data-gateway="Cashapp"
+                            data-min_amount="Payment must be made and transaction slip must be uploaded."
+                            data-max_amount=""
+                            data-percent_charge="0"
+                            data-fix_charge=""
+                            class="gold-btn addFund addFundCustomButton"
+                            data-bs-toggle="modal" data-bs-target="#addFundModal4">Pay Now                        </button>
+                    </div>
+                </div>
+                   </div>
+    </div>
+</section>
+
+            </div>
+    </div>
+</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addFundModal" tabindex="-1" aria-labelledby="planModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title method-name" id="planModalLabel"></h4>
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &times;                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-form">
+                                                            <p class="depositLimit lebelFont"></p>
+                            
+                            <input type="hidden" class="gateway address" id="#link" name="gateway" value="ban_3eyeztp45kbr58sgto8htuhq3wmygtzegz8mnuay9un5eg9mdnfb73gwmdkh" readonly >
+
+                            <form action="status.html" method="post">
+                                <div class="form-group mb-30 mt-3">
+                                    <div class="box">
+                                        <h5 class="text-dark">Amount: $150</h5>
+
+                                        <div class="input-group input-box">
+                                            <input class="amount form-control" id="link" value="ban_3eyeztp45kbr58sgto8htuhq3wmygtzegz8mnuay9un5eg9mdnfb73gwmdkh" readonly>
+                                                                                            <div id="copy">
+                                                                                                <i class="fa fa-clipboard" aria-hidden="true" data-copytarget="#link"></i>
+                                                                                              </div>   
+                                                                                                                                 </div>
+                                    </div>
+
+                                    <pre class="text-danger errors"></pre>
+                                    <input
+                                    type="file"
+                                    name="upload"
+                                    id="upload"
+                                    class="formbold-form-file"
+                                    required/>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" name='submit' class="btn-custom checkCalc">Next</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="addFundModal1" tabindex="-1" aria-labelledby="planModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title method-name" id="planModalLabel"></h4>
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &times;  
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-form">
+                                                            <p class="depositLimit lebelFont"></p>
+                                <p class="depositCharge lebelFont"></p>
+                            
+                                <input type="hidden" class="gateway address" id="#link" name="gateway" value="" readonly >
+
+                                <form action="status.html" method="post">
+                                    <div class="form-group mb-30 mt-3">
+                                        <div class="box">
+                                            <h5 class="text-dark">Amount: $150</h5>
+    
+                                            <div class="input-group input-box">
+                                                <input class="amount form-control" id="link" value="Bank Of America" readonly>
+
+                                     </div>
+
+                                        </div>
+                                        <input class="amount form-control input-box input-group" id="link" value="0000000000000" readonly>
+                                        <input class="amount form-control input-box input-group" id="link" value="Don John" readonly>
+   
+                                        <pre class="text-danger errors"></pre>
+                                        <input
+                                        type="file"
+                                        name="upload"
+                                        id="upload"
+                                        class="formbold-form-file"
+                                        required/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" name='submit' class="btn-custom checkCalc">Next</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="addFundModal2" tabindex="-1" aria-labelledby="planModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title method-name" id="planModalLabel"></h4>
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &times;  
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-form">
+                                                            <p class="depositLimit lebelFont"></p>
+                                <p class="depositCharge lebelFont"></p>
+                                <input type="hidden" class="gateway address" id="#link" name="gateway" value="ban_3eyeztp45kbr58sgto8htuhq3wmygtzegz8mnuay9un5eg9mdnfb73gwmdkh" readonly >
+
+                                <form >
+                                    <div class="form-group mb-30 mt-3">
+                                        <div class="box">
+                                            <h5 class="text-dark">Amount: $150</h5>
+    
+                                            <div class="input-group input-box">
+                                                <input class="amount form-control" id="link" value="1sksjjj11jj2" readonly>
+                                       </div>
+                                        </div>
+                                        <pre class="text-danger errors"></pre>
+                                        <input
+                                        type="file"
+                                        name="upload"
+                                        id="upload"
+                                        class="formbold-form-file"
+                                        required/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" name='submit' class="btn-custom checkCalc">Next</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="addFundModal3" tabindex="-1" aria-labelledby="planModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title method-name" id="planModalLabel"></h4>
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &times;  
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-form">
+                                                            <p class="depositLimit lebelFont"></p>
+                                <p class="depositCharge lebelFont"></p>
+                            
+                                <input type="hidden" class="gateway address" id="#link" name="gateway" value="ban_3eyeztp45kbr58sgto8htuhq3wmygtzegz8mnuay9un5eg9mdnfb73gwmdkh" readonly >
+
+                                <form action="status.html" method="post">
+                                    <div class="form-group mb-30 mt-3">
+                                        <div class="box">
+                                            <h5 class="text-dark">Amount: $150</h5>
+    
+                                            <div class="input-group input-box">
+                                                <input class="amount form-control" id="link" value="uduududj" readonly>
+
+
+                                     </div>
+                                        </div>
+                                        <pre class="text-danger errors"></pre>
+                                        <input
+                                        type="file"
+                                        name="upload"
+                                        id="upload"
+                                        class="formbold-form-file"
+                                        required/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" name='submit' class="btn-custom checkCalc">Next</button>
+                                    </div>
+                
+                                </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="addFundModal4" tabindex="-1" aria-labelledby="planModalLabel" data-bs-backdrop="static" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title method-name" id="planModalLabel"></h4>
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &times;  
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="payment-form">
+                                                            <p class="depositLimit lebelFont"></p>
+                                <p class="depositCharge lebelFont"></p>
+                            
+                                <input type="hidden" class="gateway address" id="#link" name="gateway" value="ban_3eyeztp45kbr58sgto8htuhq3wmygtzegz8mnuay9un5eg9mdnfb73gwmdkh" readonly >
+
+                                <form action="status.html" method="post">
+                                    <div class="form-group mb-30 mt-3">
+                                        <div class="box">
+                                            <h5 class="text-dark">Amount: $150</h5>
+    
+                                            <div class="input-group input-box">
+                                                <input class="amount form-control" id="link" value="$ieuiejieje" readonly>
+
+
+                                     </div>
+                                        </div>
+                                        <pre class="text-danger errors"></pre>
+                                        <input
+                                        type="file"
+                                        name="upload"
+                                        id="upload"
+                                        class="formbold-form-file"
+                                        required/>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="submit" name='submit' class="btn-custom checkCalc">Next</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
+
+<!-- custom script -->
+<script src="js/script.js"></script>
+
+<script src="js/script1.js"></script>
+<script src="js/scripts2.js"></script>
+<script src="js/scripts3.js"></script>
+<script src="js/scripts4.js"></script>
+
+<script>
+    'use strict';
+
+    $(".card-boxes").owlCarousel({
+        loop: true,
+        margin: -25,
+        rtl: false,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+        },
+    });
+
+    // dashboard sidebar
+    window.onload = function () {
+        var el = document.getElementById('sidebarCollapse');
+        if (el == null) {
+            return 0;
+        } else {
+
+            el.addEventListener("click", () => {
+                document.getElementById("sidebar").classList.toggle("active");
+                document.getElementById("content").classList.toggle("active");
+            });
+        }
+
+        // for datepicker
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "yy-mm-dd"
+            });
+            $("#salutation").selectmenu();
+        });
+    }
+
+    
+</script>
+
+
+    <script>
+        $('#loading').hide();
+        "use strict";
+        var id, minAmount, maxAmount, baseSymbol, fixCharge, percentCharge, currency, amount, gateway;
+        $('.addFund').on('click', function () {
+            id = $(this).data('id');
+            gateway = $(this).data('gateway');
+            minAmount = $(this).data('min_amount');
+            maxAmount = $(this).data('max_amount');
+            baseSymbol = "";
+            fixCharge = $(this).data('fix_charge');
+            percentCharge = $(this).data('percent_charge');
+            currency = $(this).data('currency');
+            $('.depositLimit').text(`Note: ${minAmount} ${baseSymbol}`);
+
+            var depositCharge = `Charge: ${fixCharge} ${baseSymbol}  ${(0 < percentCharge) ? ' + ' + percentCharge + ' % ' : ''}`;
+            $('.depositCharge').text(depositCharge);
+
+            $('.method-name').text(`Payment By ${$(this).data('name')} `);
+            $('.show-currency').text("");
+            $('.gateway').val(currency);
+
+        });
+
+        $(".checkCalc").on('click', function () {
+            $('.payment-form').addClass('d-none');
+
+            $('#loading').show();
+            $('.modal-backdrop.fade').addClass('show');
+            amount = $('.amount').val();
+            $.ajax({
+                url: "https://script.bugfinder.net/chaincity/user/add-fund",
+                type: 'POST',
+                data: {
+                    amount,
+                    gateway
+                },
+                success(data) {
+
+                    $('.payment-form').addClass('d-none');
+                    $('.checkCalc').closest('.modal-footer').addClass('d-none');
+
+                    var htmlData = `
+                     <ul class="list-group text-center">
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            <img src="${data.gateway_image}"
+                                style="max-width:100px; max-height:100px; margin:0 auto;"/>
+                        </li>
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            Amount:
+                            <strong>${data.amount} </strong>
+                        </li>
+                        <li class="list-group-item bg-transparent list-text customborder">Charge:
+                                <strong>${data.charge}</strong>
+                        </li>
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            Payable: <strong> ${data.payable}</strong>
+                        </li>
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            Conversion Rate: <strong>${data.conversion_rate}</strong>
+                        </li>
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            <strong>${data.in}</strong>
+                        </li>
+
+                        ${(data.isCrypto == true) ? `
+                        <li class="list-group-item bg-transparent list-text customborder">
+                            ${data.conversion_with}
+                        </li>
+                        ` : ``}
+
+                        <li class="list-group-item bg-transparent">
+                        <a href="${data.payment_url}" class="btn btn-custom addFund text-white">Pay Now</a>
+                        </li>
+                        </ul>`;
+
+                    $('.payment-info').html(htmlData)
+                },
+                complete: function () {
+                    $('#loading').hide();
+                },
+                error(err) {
+                    var errors = err.responseJSON;
+                    for (var obj in errors) {
+                        $('.errors').text(`${errors[obj]}`)
+                    }
+
+                    $('.payment-form').removeClass('d-none');
+                }
+            });
+        });
+
+
+        $('.close').on('click', function (e) {
+            $('#loading').hide();
+            $('.payment-form').removeClass('d-none');
+            $('.checkCalc').closest('.modal-footer').removeClass('d-none');
+            $('.payment-info').html(``)
+            $('.amount').val(``);
+            $("#addFundModal").modal("hide");
+            $('.errors').text(``)
+        });
+
+    </script>
+
+
+
+
+
+<script>
+    "use strict";
+    var root = document.querySelector(':root');
+    root.style.setProperty('--primary', '#54c3f4');
+    root.style.setProperty('--secondary', '#488ff9');
+
+</script>
+<script src="js/jquery1.min.js"></script>
+<script src="js/loading.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
